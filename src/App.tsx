@@ -32,6 +32,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Calculator from './pages/Calculator';
 
 setupIonicReact();
 
@@ -40,7 +41,9 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          {/*<Home /> */}
+          {/* <Calculator /> */}
+          <Calculator />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
